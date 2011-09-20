@@ -7,7 +7,7 @@ trait Options {
 		return $options;
 	}
 
-	public function get_option($name, $default = false) {
+	public function get_option($name, $default = null) {
 		$c = $this->get_options_container();
 		return isset($c->$name) ? $c->$name : $default;
 	}
@@ -17,5 +17,5 @@ trait Options {
 		return $c->$name = $newvalue;
 	}
 
-	public function update_options($values, $defaults=array()) {}
+	//public function update_options($values, $defaults=array()) {}
 }
