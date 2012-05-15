@@ -1,5 +1,6 @@
 <?php
-namespace Dave1010\Traits;
+
+namespace CreateOpen\Traits;
 
 // TODO: implement
 

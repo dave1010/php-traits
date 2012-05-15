@@ -1,10 +1,16 @@
 <?php
-namespace Dave1010\Traits;
+namespace CreateOpen\Traits;
 
 trait Options {
+
+	protected $options_container;
+
+	protected function set_options_container($container = null) {
+		$this->options_container = $container ? $container : new \stdClass;
+	}
+
 	protected function get_options_container() {
-		static $options = new stdClass;
-		return $options;
+		return $this->options_container;
 	}
 
 	public function get_option($name, $default = null) {
@@ -17,5 +23,4 @@ trait Options {
 		return $c->$name = $newvalue;
 	}
 
-	//public function update_options($values, $defaults=array()) {}
 }
