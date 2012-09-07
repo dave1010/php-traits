@@ -16,7 +16,7 @@ Requires >= PHP 5.4.0 as it uses traits. Collaborators / pull requests welcome.
 
 # Installation
 
-Use [packagist]:http://packagist.org/packages/createopen/traits - put this in your `composer.json`
+Use [packagist](http://packagist.org/packages/createopen/traits) - put this in your `composer.json`
 
     {
         "require": {
