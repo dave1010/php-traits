@@ -9,14 +9,16 @@ namespace CreateOpen\Traits;
  * bad idea as it limits testability and encourages the global
  * state. Use dependency injection instead of this.
  */
-trait Singleton {
+trait Singleton
+{
+    public static function getInstance()
+    {
+        static $instance = null;
+        if ($instance === null) {
+            $instance = new self;
+        }
 
-	public static function instance() {
-		static $instance = null;
-		if ($instance === null) {
-			$instance = new self;
-		}
-		return $instance;
-	}
+        return $instance;
+    }
 
 }
