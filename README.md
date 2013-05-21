@@ -1,6 +1,8 @@
 This is a collection of handy PHP traits. These are all stand alone components, without any dependencies, 
 that can be dropped into any project. Requires >= PHP 5.4.0 as it uses traits. Collaborators / pull requests welcome.
 
+[![Build Status](https://travis-ci.org/dave1010/php-traits.png?branch=master)](https://travis-ci.org/dave1010/php-traits)
+
 ## Traits
 
  * **ClassExtras** - add utility methods to a class
